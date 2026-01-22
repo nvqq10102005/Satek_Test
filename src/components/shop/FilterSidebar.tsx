@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Checkbox, Collapse } from 'antd';
 import { useProduct } from '../../context/ProductContext';
 import { ChevronDown } from 'lucide-react';

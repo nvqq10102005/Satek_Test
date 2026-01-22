@@ -1,8 +1,7 @@
-import { Breadcrumb, Dropdown, Select, Space, type MenuProps } from 'antd';
+import { Breadcrumb, Dropdown, Space, type MenuProps } from 'antd';
 import SearchBar from '../ui/SearchBar';
 import { CONFIG } from '../../contains/config';
 import { ChevronDown, ChevronRight } from 'lucide-react';
-import { DownOutlined } from '@ant-design/icons';
 import { useProduct } from '../../context/ProductContext';
 
 
