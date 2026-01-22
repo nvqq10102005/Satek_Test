@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Header from './components/layout/Header';
 import ProductPage from './pages/ProductPage';
 import { ProductProvider } from './context/ProductContext';
