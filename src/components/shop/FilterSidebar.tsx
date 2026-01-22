@@ -52,7 +52,7 @@ const SidebarBanner = () => (
 
 // 3. Component con cho từng phần lọc
 const FilterSection = ({ title, options, apiKey, mapGroup }: any) => {
-    const { setParams, params } = useProduct();
+    const { setParams } = useProduct();
 
     const handleChange = (checkedValues: any[]) => {
         // Chuyển đổi mảng các Tên (Váy, Áo) thành mảng các ID dựa trên FILTER_MAP
@@ -105,7 +105,7 @@ const FilterSidebar = () => {
         <aside className="w-full lg:pr-4">
             {/* Banner quảng cáo - Giấu trên mobile để gọn hơn */}
             <div className="hidden lg:block mb-10">
-                {/* ... SidebarBanner cũ của bạn ... */}
+                <SidebarBanner />
             </div>
 
             <Collapse
