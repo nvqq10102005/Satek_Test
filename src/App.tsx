@@ -5,17 +5,11 @@ import { ProductProvider } from './context/ProductContext';
 import { CONFIG } from './contains/config';
 
 function App() {
-  const [searchValue, setSearchValue] = useState('');
-
-  const handleSearch = (value: string) => {
-    setSearchValue(value);
-  };
-
   return (
     <ProductProvider>
 
       <div className="min-h-screen bg-white flex flex-col">
-        <Header onSearch={handleSearch} />
+        <Header />
 
         {/* 
          Bỏ max-w-[1400px] ở đây vì các Component con đã tự quản lý Container rồi. 

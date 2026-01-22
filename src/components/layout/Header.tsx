@@ -5,11 +5,9 @@ import { ChevronDown, ChevronRight } from 'lucide-react';
 import { DownOutlined } from '@ant-design/icons';
 import { useProduct } from '../../context/ProductContext';
 
-interface HeaderProps {
-    onSearch?: (value: string) => void;
-}
 
-const Header = ({ onSearch }: HeaderProps) => {
+
+const Header = () => {
     const { setParams, pagination, params } = useProduct();
 
     const sortLabels: any = {
@@ -54,7 +52,7 @@ const Header = ({ onSearch }: HeaderProps) => {
                     </a>
 
                     <div className="w-full max-w-[300px]">
-                        <SearchBar onSearch={(val) => setParams({ text: val, page: 1 })} />
+                        <SearchBar />
                     </div>
                 </div>
             </div>
